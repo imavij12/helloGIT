@@ -1,0 +1,26 @@
+Mechanism how you can ignore some files of JAVA/ C+
+
+what-> It is used to ignore files as it is not needed to be tracked.
+to ignore a file 
+write file's name in .gitingore
+
+
+how -> It can ignore only untracked files.  untracked->ignore
+Tracked files can not be ignored. tracked -> untracked -> ignore
+
+
+why -> There are some redundant files which keeps creating everytime (System build files) 
+so we dont want to keep it tracking. Thus we ignore
+Also some secure files as well which needs to be kept secret.
+So we can ignore tracking of these files.
+
+
+
+to ignore all txt files -> *.txt
+to not ignore a file -> !3.txt
+to comment in .gitignore - # text
+
+to untrack a file 
+git rm --cached <filename> -> e.g.   git rm --cached 3.txt
+--cached helps in ignoring file inly from github
+rm only, will remove file from github as well as from staged area

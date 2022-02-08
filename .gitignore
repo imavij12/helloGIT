@@ -1,3 +1,5 @@
-gitignore.txt
-1.txt
-2.txt
+# 1.txt
+# 2.txt
+*.txt
+!3.txt
+!gitignore.txt
